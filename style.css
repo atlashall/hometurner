@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Spectral', serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 0 0 10px rgba(255,255,255,0.8);
+    animation: glitch 1.5s infinite;
+}
+
+p {
+    font-size: 1.2em;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.forget {
+    opacity: 0.7;
+}
+
+.forget:hover {
+    background-color: red;
+    color: white;
+}
+
+@keyframes glitch {
+    0% { text-shadow: 2px 2px 0px rgba(255, 0, 0, 0.7), -2px -2px 0px rgba(0, 255, 0, 0.7); }
+    50% { text-shadow: -2px -2px 0px rgba(255, 0, 0, 0.7), 2px 2px 0px rgba(0, 255, 0, 0.7); }
+    100% { text-shadow: 2px 2px 0px rgba(255, 0, 0, 0.7), -2px -2px 0px rgba(0, 255, 0, 0.7); }
+}
